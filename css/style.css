@@ -1,167 +1,192 @@
 /****** General ***********/
+/* Styles globaux pour l'ensemble du site */
 * {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif; /* Police principale du site */
 }
 
+/* Déclaration des variables CSS pour les couleurs */
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+  --main-color: #0065fc; /* Couleur principale utilisée pour les icônes et autres éléments */
+  --main-bg-color: #f2f2f2; /* Couleur de fond principale */
+  --filter-bg-color: #deebff; /* Couleur utilisée pour les filtres */
 }
 
+/* Couleur des icônes utilisant la classe Font Awesome */
 .fa-solid {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
+/* Mise en page de base du corps */
 body {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center; /* Centre le contenu horizontalement */
 }
 
+/* Conteneur principal pour tout le contenu */
 .main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+  width: 100%; /* Occupe toute la largeur disponible */
+  max-width: 1440px; /* Largeur maximale */
+  padding: 0 50px; /* Marges internes sur les côtés */
+  box-sizing: border-box; /* Inclut les bordures et le padding dans les dimensions */
 }
 
+/* Lien sans style par défaut (pas de soulignement, couleur héritée) */
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
+/* Titres de sections */
 .section-title {
-    margin: 0;
-    font-size: 22px;
+  margin: 0; /* Supprime les marges par défaut */
+  font-size: 22px; /* Taille du texte */
 }
 
+/* Style général des cartes */
 .card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  background-color: white; /* Fond blanc */
+  border-radius: 20px; /* Coins arrondis */
+  padding: 5px; /* Marges internes */
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); /* Ombre douce */
 }
 
+/* Style des images dans les cartes */
 .card img {
-    object-fit: cover;
+  object-fit: cover; /* Adapte l'image au conteneur sans distorsion */
 }
 
+/* Titre des cartes */
 .card-title {
-    font-size: 16px;
+  font-size: 16px; /* Taille du texte */
 }
 
+/* Style spécifique pour le symbole € */
 .euro {
-    font-weight: 700;
+  font-weight: 700; /* Texte en gras */
 }
 
+/* Couleur pour les étoiles "neutres" */
 .neutral-star {
-    color: var(--main-bg-color)
+  color: var(--main-bg-color);
 }
 
 /****** Hebergements And Populaires ***********/
+/* Conteneur pour les sections hébergements et populaires */
 .hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
+  display: flex; /* Affichage en ligne */
+  justify-content: space-between; /* Espacement entre les sections */
 }
 
+/* Style des sections internes */
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
+  background-color: var(--main-bg-color); /* Fond clair */
+  border-radius: 20px; /* Coins arrondis */
+  padding: 30px; /* Marges internes */
+  box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
+/* La section "hébergements" occupe 65% de l'espace */
 .hebergements {
-    width: 65%;
+  width: 65%;
 }
 
 /****** Populaires ***********/
+/* La section "populaires" occupe 32% de l'espace */
 .populaires {
-    width: 32%;
+  width: 32%;
 }
 
+/* Titre de la section "populaires" avec icône */
 .populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligne verticalement les éléments */
 }
 
+/* Style des cartes populaires */
 .populaires-cards .card {
-    display: flex;
-    margin-top: 33px;
+  display: flex; /* Contenu en ligne */
+  margin-top: 33px; /* Espacement entre les cartes */
 }
 
+/* Images des cartes populaires */
 .populaires-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+  width: 33%; /* L'image occupe un tiers de la carte */
+  height: 136px; /* Hauteur fixe */
+  border-top-left-radius: 20px; /* Coins arrondis pour la partie gauche */
+  border-bottom-left-radius: 20px;
 }
 
+/* Contenu des cartes populaires */
 .populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+  width: 67%; /* Le texte occupe les deux tiers restants */
+  padding-left: 15px; /* Espacement interne à gauche */
+  display: flex;
+  flex-direction: column; /* Contenu organisé en colonne */
+  justify-content: space-between; /* Répartit l'espace verticalement */
+  box-sizing: border-box;
 }
 
+/* Style du titre dans les cartes */
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+  margin-top: 10px;
+  margin-bottom: 4px;
 }
 
+/* Sous-titre des cartes */
 .populaires-cards .card-subtitle {
-    margin: 0;
+  margin: 0; /* Supprime les marges par défaut */
 }
 
+/* Évaluations par étoiles dans les cartes */
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+  margin-bottom: 5px; /* Espacement en bas */
 }
-
-
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/* Medium devices (tablettes : largeur max de 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
+  /* Les sections passent en colonne */
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
 
-    .hebergements {
-        width: 100%;
-    }
+  /* La section "hébergements" occupe toute la largeur */
+  .hebergements {
+    width: 100%;
+  }
 
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
+  /* La section "populaires" occupe toute la largeur et ajoute une marge en haut */
+  .populaires {
+    width: 100%;
+    margin-top: 50px;
+  }
 
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  /* Les cartes populaires sont organisées en ligne avec un espacement */
+  .populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .populaires-cards a {
-        width: 30%;
-    }
+  /* Chaque carte populaire occupe 30% de la largeur */
+  .populaires-cards a {
+    width: 30%;
+  }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
+  /* Taille réduite pour le titre des cartes */
+  .populaires-cards .card-title {
+    font-size: 14px;
+  }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
+  /* Taille réduite pour le sous-titre des cartes */
+  .populaires-cards .card-subtitle {
+    font-size: 13px;
+  }
 }
 
-/* Small devices (phones, less than 768px) */
+/* Small devices (téléphones : largeur max de 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+  /* Aucun style défini pour cette section, à compléter si nécessaire */
 }
