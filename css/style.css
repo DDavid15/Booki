@@ -1,47 +1,33 @@
-/****** General ***********/
-/* Styles globaux pour l'ensemble du site */
 * {
-  font-family: "Raleway", sans-serif; /* Police principale du site */
+  font-family: "Raleway", sans-serif;
 }
-
-/* Déclaration des variables CSS pour les couleurs */
 :root {
   --main-color: #0065fc; /* Couleur principale utilisée pour les icônes et autres éléments */
   --main-bg-color: #f2f2f2; /* Couleur de fond principale */
   --filter-bg-color: #deebff; /* Couleur utilisée pour les filtres */
 }
-
-/* Couleur des icônes utilisant la classe Font Awesome */
 .fa-solid {
   color: var(--main-color);
 }
-
-/* Mise en page de base du corps */
 body {
   display: flex;
-  justify-content: center; /* Centre le contenu horizontalement */
+  justify-content: center;
 }
-
-/* Conteneur principal pour tout le contenu */
 .main-container {
   width: 100%; /* Occupe toute la largeur disponible */
   max-width: 1440px; /* Largeur maximale */
   padding: 0 50px; /* Marges internes sur les côtés */
   box-sizing: border-box; /* Inclut les bordures et le padding dans les dimensions */
 }
-
 /* Lien sans style par défaut (pas de soulignement, couleur héritée) */
 a {
   color: inherit;
   text-decoration: none;
 }
-
-/* Titres de sections */
 .section-title {
   margin: 0; /* Supprime les marges par défaut */
   font-size: 22px; /* Taille du texte */
 }
-
 /* Style général des cartes */
 .card {
   background-color: white; /* Fond blanc */
@@ -49,22 +35,18 @@ a {
   padding: 5px; /* Marges internes */
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); /* Ombre douce */
 }
-
 /* Style des images dans les cartes */
 .card img {
   object-fit: cover; /* Adapte l'image au conteneur sans distorsion */
 }
-
 /* Titre des cartes */
 .card-title {
   font-size: 16px; /* Taille du texte */
 }
-
 /* Style spécifique pour le symbole € */
 .euro {
   font-weight: 700; /* Texte en gras */
 }
-
 /* Couleur pour les étoiles "neutres" */
 .neutral-star {
   color: var(--main-bg-color);
@@ -76,7 +58,6 @@ a {
   display: flex; /* Affichage en ligne */
   justify-content: space-between; /* Espacement entre les sections */
 }
-
 /* Style des sections internes */
 .hebergements-and-populaires section {
   background-color: var(--main-bg-color); /* Fond clair */
@@ -84,11 +65,53 @@ a {
   padding: 30px; /* Marges internes */
   box-sizing: border-box;
 }
-
 /****** Hebergements ***********/
 /* La section "hébergements" occupe 65% de l'espace */
 .hebergements {
   width: 65%;
+}
+/* Titre de la section "populaires" avec icône */
+.hebergements-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligne verticalement les éléments */
+}
+
+/* Style des cartes populaires */
+.hebergements-cards .card {
+  display: flex; /* Contenu en ligne */
+  margin-top: 33px; /* Espacement entre les cartes */
+}
+
+/* Images des cartes populaires */
+.hebergements-cards img {
+  width: 33%; /* L'image occupe un tiers de la carte */
+  height: 136px; /* Hauteur fixe */
+  border-top-left-radius: 20px; /* Coins arrondis pour la partie gauche */
+  border-bottom-left-radius: 20px;
+}
+
+/* Contenu des cartes populaires */
+.hebergements-cards .card-content {
+  width: 67%; /* Le texte occupe les deux tiers restants */
+  padding-left: 15px; /* Espacement interne à gauche */
+  display: flex;
+  flex-direction: row; /* Contenu organisé en colonne */
+  justify-content: space-between; /* Répartit l'espace verticalement */
+  box-sizing: border-box;
+}
+/* Style du titre dans les cartes */
+.hebergements-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+/* Sous-titre des cartes */
+.hebergements-cards .card-subtitle {
+  margin: 0; /* Supprime les marges par défaut */
+}
+/* Évaluations par étoiles dans les cartes */
+.hebergements-cards .card-rating {
+  margin-bottom: 5px; /* Espacement en bas */
 }
 
 /****** Populaires ***********/
@@ -156,7 +179,6 @@ a {
   .hebergements {
     width: 100%;
   }
-
   /* La section "populaires" occupe toute la largeur et ajoute une marge en haut */
   .populaires {
     width: 100%;
