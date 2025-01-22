@@ -58,13 +58,34 @@ a {
 .search-form {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 275px;
-  padding: 5px;
+  width: 300px;
+  margin-top: 15px;
 }
+.search-form i {
+  color: black;
+  width: 40px;
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-form input {
+  border: 1px solid #f2f2f2;
+  font-weight: 900;
+  outline: none;
+  text-align: center;
+}
+.search-form button {
+  border: none;
+  background-color: var(--main-color);
+  height: 40px;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 .filter {
   display: flex;
   flex-direction: row;
@@ -124,6 +145,7 @@ a {
   font-size: 22px; /* Taille du texte */
 }
 /* Style général des cartes */
+
 .card {
   background-color: white; /* Fond blanc */
   border-radius: 20px; /* Coins arrondis */
@@ -169,19 +191,21 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 .hebergements-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+  gap: 20px;
+  justify-content: space-between;
+}
+.hebergements-cards a {
+  width: calc(33% - 20px);
 }
 .hebergements-cards .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 230px;
-  margin: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
 }
 .hebergements-cards img {
   width: 100%;
@@ -203,7 +227,9 @@ a {
 .hebergements-cards .card-rating {
   margin-bottom: 5px;
 }
-
+.hebergements-footer {
+  margin-top: 20px;
+}
 /****** Populaires ***********/
 /* La section "populaires" occupe 32% de l'espace */
 .populaires {
