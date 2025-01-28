@@ -246,8 +246,8 @@ nav .hover-text:nth-child(2) {
 .hebergements-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .hebergements-cards a {
@@ -271,6 +271,7 @@ nav .hover-text:nth-child(2) {
 .populaires-cards {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 
 .populaires-cards .card {
@@ -292,10 +293,6 @@ nav .hover-text:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.populaires-cards .card .card-content .card-subtitle {
-  margin-bottom: 25%;
 }
 
 .activites {
