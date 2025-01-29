@@ -193,20 +193,20 @@ a {
 
 .card-title {
   font-size: 16px;
-  margin: 0 0 5px 4%;
+  margin: 0 0 5px 5px;
 }
 
 .card-subtitle {
   margin: 0;
-  margin-top: 3%;
+  margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 4%;
+  margin-left: 5px;
   font-size: 14px;
 }
 
 .card-rating {
   margin-bottom: 5px;
-  margin-left: 4%;
+  margin-left: 5px;
   font-size: 100%;
 }
 
