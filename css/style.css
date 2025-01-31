@@ -439,6 +439,7 @@ a {
     padding-bottom: 6px;
     border-bottom: 2px solid #f2f2f2;
     margin: 0%;
+    width: 100%;
   }
   .hover-text:first-child {
     padding: 0 10%0% 10%;
