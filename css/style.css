@@ -17,6 +17,9 @@
 .fa-solid {
   color: var(--main-color);
 }
+.neutral-star {
+  color: var(--main-bg-color);
+}
 
 body {
   width: 100%;
